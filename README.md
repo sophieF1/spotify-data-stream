@@ -1,4 +1,4 @@
-# Getting 
+# Getting started
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 You will need to set the `clientId` and `redirectUri` to match your application configuration.
