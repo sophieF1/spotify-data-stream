@@ -157,17 +157,18 @@ class App extends Component {
               Login
             </a>
           )}
+          </header>
           {this.state.token && !this.state.no_data && (
-            <div className="dataTitle">
+            <div className="grid-container">
+              <div className="grid-item">
               Most recently played
-              <ul className="dataList">{this.state.userRecentlyPlayed}</ul>
-              <div className="dataTitle">Your top 5 artists</div>
-              <ul className="dataList">{this.state.userTopArtists}</ul>
-              <div className="dataTitle">Your top 5 tracks</div>
-              <ul className="dataList">{this.state.userTopTracks}</ul>
+              <ul>{this.state.userRecentlyPlayed}</ul> </div>
+              <div className="grid-item">Your top 5 artists 
+              <ul>{this.state.userTopArtists}</ul> </div>
+              <div className="grid-item">Your top 5 tracks
+              <ul >{this.state.userTopTracks}</ul> </div>
             </div>
           )}
-        </header>
       </div>
     );
   }
